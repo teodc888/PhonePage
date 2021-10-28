@@ -13,7 +13,7 @@ function rootReducer(state = inicialState, action){
             phones: action.payload,
             
         }
-    }
+    }   
     if(action.type === GET_PHONE){
         return{
             ...state,
