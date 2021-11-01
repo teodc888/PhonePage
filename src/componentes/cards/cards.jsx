@@ -5,11 +5,13 @@ import ListItemText from '@mui/material/ListItemText';
 import { useSelector } from "react-redux";
 import { Link } from 'react-router-dom';
 import "./cards.css"
+import Buscador from '../buscador/buscador';
 
 export default function Cards() {
   const phones = useSelector((state) => state.phones );
   return (
     <>
+      <Buscador/>
         {
           phones.length &&
           phones.map((phone) =>{

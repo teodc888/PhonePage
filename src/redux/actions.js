@@ -1,6 +1,7 @@
 export const GET_PHONE= "GET_PHONE" 
 export const ALL_PHONE= "ALL_PHONE" 
 export const FILTRADO_NOMBRE="FILTRADO_NOMBRE"
+export const FILTRADO_MARCA="FILTRADO_MARCA"
 export const GET_PHONE_INFO="GET_PHONE_INFO"
 
 export function AllPhone(){

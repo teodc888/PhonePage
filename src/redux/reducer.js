@@ -20,7 +20,7 @@ function rootReducer(state = inicialState, action){
     if(action.type === GET_PHONE){
         return{
             ...state,
-            phone: action.payload
+            phone: action.payload,
         }
     }
     if(action.type === FILTRADO_NOMBRE){

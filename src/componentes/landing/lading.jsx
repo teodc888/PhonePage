@@ -13,7 +13,7 @@ function Landing(){
                 alignItems="center"
                 spacing={0}
                 >
-                <h1>Bienvenidos</h1>
+                <h1 className="bienvenidos">Bienvenidos</h1>
                 <Link to="/home">
                     <Button variant="contained">Entrar</Button>
                 </Link>

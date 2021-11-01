@@ -1,15 +1,14 @@
-import { Select } from "@mui/material";
 import React, {useEffect} from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { GetPhoneInfo } from "../../redux/actions";
 import { Link } from "react-router-dom";
 import "./dataPhone.css"
 import { Stack } from "@mui/material";
-import { ListItem } from "@mui/material";
+
 
 
 function DataPhoneInfo(props){
-    console.log(props)
+
     const dispatch = useDispatch();
 
     useEffect(() =>{
@@ -18,7 +17,7 @@ function DataPhoneInfo(props){
 
     const phone = useSelector((state) => state.phoneInfo)
 
-    console.log(phone)
+ 
     return(
         <div className="prueba">
             {
@@ -30,7 +29,7 @@ function DataPhoneInfo(props){
                                 spacing={0}
                                 >
                                <h1>{phone?.phone_name}</h1>
-                                <img src={phone?.phone_images ? phone?.phone_images[0] : <h1>no hay nada</h1>} />
+                                <img alt="Imagen" src={phone?.phone_images ? phone?.phone_images[0] : <h1>no hay nada</h1>} />
                                 <h2>{phone?.release_date}</h2>
                                 <h2>dimensiones: {phone?.dimension}</h2>
                                 <h2>SO: {phone?.os}</h2>
@@ -49,7 +48,7 @@ function DataPhoneInfo(props){
                                 spacing={0}
                                 >
                           
-                               <h2 key={el.id}>{el.title}</h2>
+                               <h1 key={el.id}>{el.title}</h1>
                                 {
                                     el.specs.map((el) =>{
                                         return(
@@ -78,5 +77,3 @@ function DataPhoneInfo(props){
 }
 export default DataPhoneInfo;
 
-{/* <p>{el.specs.map((el) => el.key + " || ")}</p>
-<p>{el.specs.map((el) => el.val + " || ")}</p> */}
