@@ -5,9 +5,9 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import StyledInput from '../StyledInput/StyledInput';
+import { Link } from 'react-router-dom';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -41,6 +41,7 @@ export default function SearchAppBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
+          <Link to="/">
           <IconButton
             size="large"
             edge="start"
@@ -50,6 +51,7 @@ export default function SearchAppBar() {
           >
             <MenuIcon />
           </IconButton>
+          </Link>
           <Typography
             variant="h6"
             noWrap

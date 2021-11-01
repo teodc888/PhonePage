@@ -30,7 +30,7 @@ function rootReducer(state = inicialState, action){
                 return el;
             }
         }) 
-        console.log(nameFiltrado)
+     
         return{
             ...state,
             phones: nameFiltrado,

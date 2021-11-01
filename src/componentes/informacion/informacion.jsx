@@ -31,10 +31,10 @@ function Informacion(props){
                 </div>
             }
             {
-                phone?.phones === undefined || phone?.phones.length === 0? <h1>No hay telefonos</h1>: phone.phones.map((el) =>{
+                phone?.phones === undefined || phone?.phones.length === 0? <h1>...CARGANDO</h1>: phone.phones.map((el) =>{
                     return(
                     
-                        <div key={el.id}>
+                        <div key={el.phone_name}>
                             <Stack
                                 direction="column"
                                 justifyContent="space-evenly"

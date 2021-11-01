@@ -5,6 +5,7 @@ import Cards from "../cards/cards";
 import NavBar from "../navbar/navbar";
 import DataPhoneInfo from "../dataPhone/dataPhone";
 import Informacion from "../informacion/informacion";
+import Landing from "../landing/lading";
 import { Route, Switch } from "react-router";
 import { Container } from "@mui/material";
 function Home() {
@@ -23,7 +24,7 @@ function Home() {
     <>
       <Switch>
         <Route exact path="/">
-  
+          <Landing/>
         </Route>
         <Container>
           <NavBar />

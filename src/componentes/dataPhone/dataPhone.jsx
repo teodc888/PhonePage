@@ -39,9 +39,15 @@ function DataPhoneInfo(props){
                 </div>
             }
             {
-                 phone?.specifications === undefined || phone?.specifications.length === 0? <h1>No hay telefonos</h1>: phone.specifications.map((el) =>{
+                 phone?.specifications === undefined || phone?.specifications.length === 0? <h1>...CARGANDO</h1>: phone.specifications.map((el) =>{
                      return(
                          <>
+                            <Stack
+                                direction="column"
+                                justifyContent="space-evenly"
+                                alignItems="center"
+                                spacing={0}
+                                >
                           
                                <h2 key={el.id}>{el.title}</h2>
                                 {
@@ -57,6 +63,7 @@ function DataPhoneInfo(props){
                                     })                      
                                 }
                            
+                           </Stack>
 
                          </>
                      )
